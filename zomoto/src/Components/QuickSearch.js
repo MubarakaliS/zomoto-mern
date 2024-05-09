@@ -7,7 +7,7 @@ const QuickSearch = () => {
   const navigate = useNavigate();
   const getMealData = () => {
     axios
-      .get(`https://backend-api-rlne.onrender.com/getallrestById/getallmeal`)
+      .get(`https://backend-api-rlne.onrender.com/getallmeal`)
       .then((response) => response.data)
       .then((data) => {
         setMealData(data);
