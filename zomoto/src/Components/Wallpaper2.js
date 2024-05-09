@@ -12,7 +12,7 @@ const Wallpaper2 = () => {
 
   const getEvents = () => {
     axios
-      .get("http://localhost:4000/getallloc")
+      .get("https://backend-api-rlne.onrender.com/getallloc")
       .then((response) => response.data)
       .then((data) => {
         setEventDetails(data);
@@ -26,7 +26,7 @@ const Wallpaper2 = () => {
     const locationId = event.target.value;
     setSelectedLocationId(locationId);
     axios
-      .get(`http://localhost:4000/getallrestLocationId/${locationId}`)
+      .get(`https://backend-api-rlne.onrender.com/getallrestLocationId/${locationId}`)
       .then((response) => response.data)
       .then((data) => {
         setRestaurants(data);
