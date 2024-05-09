@@ -18,7 +18,7 @@ const Carousels = () => {
   useEffect(() => {
     async function getRestaurant() {
       try {
-        const response = await axios.get(`http://localhost:4000/getallrestById/${restaurantId}`);
+        const response = await axios.get(`https://backend-api-rlne.onrender.com/getallrestById/getallrestById/${restaurantId}`);
         setRestaurantData(response.data.thumb);
       } catch (error) {
         console.error("Error fetching restaurant details:", error);
