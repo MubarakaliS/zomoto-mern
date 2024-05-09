@@ -27,7 +27,7 @@ const Filter = () => {
   const mealItem = () => {
     axios({
       method: "POST",
-      url: `http://localhost:4000/filter`,
+      url: `https://backend-api-rlne.onrender.com/filter`,
       headers: { "Content-Type": "application/json" },
       data: filterObj,
     })
@@ -43,7 +43,7 @@ const Filter = () => {
   const [locationData, setLocationData] = useState([]);
   const getEvents = () => {
     axios
-      .get("http://localhost:4000/getallloc")
+      .get("https://backend-api-rlne.onrender.com/getallloc")
       .then((response) => response.data)
       .then((data) => {
         setLocationData(data);
@@ -69,7 +69,7 @@ const Filter = () => {
     };
     axios({
       method: "POST",
-      url: `http://localhost:4000/filter`,
+      url: `https://backend-api-rlne.onrender.com/filter`,
       headers: { "Content-Type": "application/json" },
       data: filterObj,
     })
@@ -102,7 +102,7 @@ const Filter = () => {
     };
     axios({
       method: "POST",
-      url: `http://localhost:4000/filter`,
+      url: `https://backend-api-rlne.onrender.com/filter`,
       headers: { "Content-Type": "application/json" },
       data: filterObj,
     })
@@ -130,7 +130,7 @@ const Filter = () => {
     };
     axios({
       method: "POST",
-      url: `http://localhost:4000/filter`,
+      url: `https://backend-api-rlne.onrender.com/filter`,
       headers: { "Content-Type": "application/json" },
       data: filterObj,
     })
@@ -157,7 +157,7 @@ const Filter = () => {
     };
     axios({
       method: "POST",
-      url: `http://localhost:4000/filter`,
+      url: `https://backend-api-rlne.onrender.com/filter`,
       headers: { "Content-Type": "application/json" },
       data: filterObj,
     })
