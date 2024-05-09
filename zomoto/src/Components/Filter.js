@@ -15,7 +15,6 @@ const Filter = () => {
   const [lowCost, setLowCost] = useState(undefined);
   const [highCost, setHighCost] = useState(undefined);
   const [sorting, setSorting] = useState(1);
-  const [page, setPage] = useState(1);
   const location = useLocation();
   const qs = queryString.parse(location.search);
   const { mealTypeId, locationId } = qs;
