@@ -16,7 +16,7 @@ const CarouselModal = (props) => {
   const { restaurantId } = qs;
   const getRestaurant = async () => {
     await axios
-      .get(`https://backend-api-rlne.onrender.com/getallrestById/getallrestById/${restaurantId}`)
+      .get(`https://backend-api-rlne.onrender.com/getallrestById/${restaurantId}`)
       .then((response) => response.data)
       .then((data) => {
         setRestaurantData(data.thumb);
