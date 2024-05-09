@@ -3,7 +3,6 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./Home";
 import Filter from "./Filter";
 import TabsForm from "./Tabs";
-import Header from "./Header";
 const Router = () => {
   return (
     <BrowserRouter>
@@ -15,5 +14,4 @@ const Router = () => {
     </BrowserRouter>
   );
 };
-
 export default Router;
