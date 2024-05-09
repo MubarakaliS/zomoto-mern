@@ -16,7 +16,7 @@ const TabsForm = () => {
 
   const getRestaurant = () => {
     axios
-      .get(`http://localhost:4000/getallrestById/${restaurantId}`)
+      .get(`https://backend-api-rlne.onrender.com/getallrestById/${restaurantId}`)
       .then((response) => response.data)
       .then((data) => {
         setRestaurantData(data);
