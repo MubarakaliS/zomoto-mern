@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import queryString from "query-string";
+
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import CarouselModal from "./CarouselModal";
-import { useLocation } from "react-router-dom";
-import queryString from "query-string";
 import axios from "axios";
 import pic1 from "../Assets/snacks.jpg";
 
