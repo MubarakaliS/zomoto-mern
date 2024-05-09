@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Payment = (props) => {
   const [total, setTotal] = useState(props.amount);
@@ -7,7 +6,6 @@ const Payment = (props) => {
   const [address, setAddress] = useState('');
   const [phno, setPhno] = useState('');
   const [emailId, setEmailId] = useState('');
-  const navigate = useNavigate();
 
   useEffect(() => {
     const script = document.createElement("script");
